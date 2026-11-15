@@ -1,4 +1,8 @@
-package cn.ebms.post;
+package cn.ebms.post.service;
+
+import cn.ebms.post.model.dataobject.PostDO;
+import cn.ebms.post.repository.PostRepository;
+import cn.ebms.post.model.vo.PostSaveReqVO;
 
 public class PostServiceImpl {
 

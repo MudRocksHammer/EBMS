@@ -1,4 +1,6 @@
-package cn.ebms.post;
+package cn.ebms.post.repository;
+
+import cn.ebms.post.model.dataobject.PostDO;
 
 public interface PostRepository {
 

@@ -1,5 +1,11 @@
 package cn.ebms.post;
 
+import cn.ebms.post.model.dataobject.PostDO;
+import cn.ebms.post.model.vo.PostSaveReqVO;
+import cn.ebms.post.repository.PostRepository;
+import cn.ebms.post.repository.memory.InMemoryPostRepository;
+import cn.ebms.post.service.PostServiceImpl;
+
 public class Main {
 
     public static void main(String[] args) {
