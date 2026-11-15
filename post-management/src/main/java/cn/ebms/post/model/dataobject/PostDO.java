@@ -1,4 +1,4 @@
-package cn.ebms.post;
+package cn.ebms.post.model.dataobject;
 
 public class PostDO {
 

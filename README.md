@@ -16,16 +16,18 @@
 
 ```text
 EBMS/
-├── java-basics/                         # Java の基礎練習
-└── post-management/                     # 職位管理のメインプロジェクト
-    ├── pom.xml                         # Maven のビルド設定
+├── java-basics/
+└── post-management/
+    ├── pom.xml
     └── src/main/java/cn/ebms/post/
-        ├── Main.java                   # エントリーポイントと動作確認
-        ├── PostSaveReqVO.java          # 職位登録のリクエストデータ
-        ├── PostDO.java                 # 保存対象の職位データ
-        ├── PostRepository.java         # データアクセス用インターフェース
-        ├── InMemoryPostRepository.java # インメモリ保存の実装
-        └── PostServiceImpl.java        # 入力検証・重複確認・登録処理
+        ├── Main.java
+        ├── model/
+        │   ├── vo/PostSaveReqVO.java
+        │   └── dataobject/PostDO.java
+        ├── repository/
+        │   ├── PostRepository.java
+        │   └── memory/InMemoryPostRepository.java
+        └── service/PostServiceImpl.java
 ```
 
 `Main` が Service を呼び出し、Service は Repository インターフェースを通じてインメモリストレージにアクセスします。リクエストを `PostSaveReqVO` で受け取り、保存前に `PostDO` に変換します。登録が成功すると、リポジトリで採番された職位 ID を返します。

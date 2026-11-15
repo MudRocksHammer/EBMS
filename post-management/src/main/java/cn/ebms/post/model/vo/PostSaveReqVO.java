@@ -1,4 +1,4 @@
-package cn.ebms.post;
+package cn.ebms.post.model.vo;
 
 public class PostSaveReqVO {
 

@@ -1,4 +1,7 @@
-package cn.ebms.post;
+package cn.ebms.post.repository.memory;
+
+import cn.ebms.post.model.dataobject.PostDO;
+import cn.ebms.post.repository.PostRepository;
 
 import java.util.HashMap;
 import java.util.Map;
